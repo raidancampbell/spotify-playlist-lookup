@@ -60,4 +60,4 @@ You can connect to the dev database with `docker-compose exec db psql --username
 
 And see server logs with `docker-compose logs -f`
 
-New migration can be run with `docker-compose exec web flask db migrate -m "reason for migration"` (containers need to be running)
+New migration can be run with `docker-compose exec web flask db migrate -m "reason for migration"` (containers need to be running).  Initial setup will be `docker-compose exec web flask db upgrade`
