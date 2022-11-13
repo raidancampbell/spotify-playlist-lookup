@@ -164,7 +164,7 @@ class Track(db.Model):
         )
 
     def get_playlists(self):
-        return self.playlists_query.all()
+        return self.playlists_query().all()
 
 
 # TODO: insert_playlist_tracks() does a bit too much and should be split.
